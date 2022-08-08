@@ -12,4 +12,12 @@ public interface BoardMapper {
     List<Board> getList();
 
     Board getBoard(Long boardId);
+
+    void uploadBoard(Board board);
+
+    Object updateBoard(Board board);
+
+    void deleteBoard(Long boardId);
+
+    void viewCount(Long boardId);
 }

@@ -26,5 +26,21 @@ public class BoardService {
     public Board getBoard(Long boardId) {
         return boardMapper.getBoard(boardId);
     }
+
+    @Transactional // 추가
+    public void uploadBoard(Board board) {
+        boardMapper.uploadBoard(board);
+    }
+
+    @Transactional
+    public Object updateBoard(Board board) {
+// boardMapper.updateBoard(board);
+        return boardMapper.updateBoard(board);
+    }
+
+    @Transactional
+    public void deleteBoard(Long boardId) {
+        boardMapper.deleteBoard(boardId);
+    }
 }
 

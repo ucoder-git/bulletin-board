@@ -20,4 +20,22 @@
         FROM tbl_board where boardId=#{boardId};
     </select>
 
+    <update id="updateBoard" parameterType="wedatalab.bulletinboard.domain.Board">
+        UPDATE tbl_board
+        SET title=#{title}, content=#{content}
+        WHERE boardId=#{boardId};
+    </update>
+
+    <delete id="deleteBoard" parameterType="Long">
+        DELETE
+        FROM tbl_board
+        WHERE boardId=#{boardId};
+    </delete>
+
+    <update id="viewCount">
+        UPDATE tbl_board
+        SET read = read + 1
+        WHERE boardId=#{boardId};
+    </update>
+
 </mapper>
