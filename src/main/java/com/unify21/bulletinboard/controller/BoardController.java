@@ -27,6 +27,9 @@ public class BoardController {
         return "/boards/hello";
     }
 
+    private Object boardCount() {
+    }
+
     // 추가
     @GetMapping("/main")
     public String main(Model model) {
