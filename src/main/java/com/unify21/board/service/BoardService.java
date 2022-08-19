@@ -1,7 +1,7 @@
-package com.unify21.bulletinboard.service;
+package com.unify21.board.service;
 
-import com.unify21.bulletinboard.domain.Board;
-import com.unify21.bulletinboard.mapper.BoardMapper;
+import com.unify21.board.domain.Board;
+import com.unify21.board.mapper.BoardMapper;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

@@ -1,6 +1,6 @@
-package com.unify21.bulletinboard.mapper;
+package com.unify21.board.mapper;
 
-import com.unify21.bulletinboard.domain.Board;
+import com.unify21.board.domain.Board;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;

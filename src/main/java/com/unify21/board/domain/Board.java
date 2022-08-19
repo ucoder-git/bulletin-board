@@ -1,4 +1,4 @@
-package com.unify21.bulletinboard.domain;
+package com.unify21.board.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
